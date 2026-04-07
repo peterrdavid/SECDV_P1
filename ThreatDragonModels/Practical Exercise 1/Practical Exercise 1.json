@@ -3918,8 +3918,7 @@
               "hasOpenThreats": false,
               "crossingFlows": [
                 "c3453014-ceed-4cd5-9c1b-d343859211a9",
-                "446c87f6-680f-47c7-859e-9900242a202f",
-                "a497f939-d04d-4fbb-a767-942b1756003a"
+                "446c87f6-680f-47c7-859e-9900242a202f"
               ],
               "containedElements": [
                 "2174488a-20f3-4c63-89ed-53d4dd19b402"
@@ -3954,7 +3953,6 @@
                 "c3453014-ceed-4cd5-9c1b-d343859211a9",
                 "95006d86-5e12-4cef-b6b5-3e8997f3667a",
                 "446c87f6-680f-47c7-859e-9900242a202f",
-                "a497f939-d04d-4fbb-a767-942b1756003a",
                 "7b6ab5fc-a664-48cb-9889-3b5798619095"
               ],
               "containedElements": [
@@ -4358,7 +4356,7 @@
               }
             },
             "children": [
-              "399047a9-8433-42a6-9141-715e0049bb36"
+              "a003a7a2-ab00-418e-a84c-1674b4941ecf"
             ]
           },
           {
@@ -4372,7 +4370,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Manager"
+                "text": "Administrator"
               },
               "body": {
                 "stroke": "red",
@@ -4468,7 +4466,7 @@
             "id": "2174488a-20f3-4c63-89ed-53d4dd19b402",
             "data": {
               "type": "tm.Actor",
-              "name": "Manager",
+              "name": "Administrator",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -4832,7 +4830,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Login Credentials",
+              "name": "Login and Input",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -4849,7 +4847,7 @@
               ]
             },
             "labels": [
-              "Login Credentials"
+              "Login and Input"
             ],
             "id": "c3453014-ceed-4cd5-9c1b-d343859211a9",
             "source": {
@@ -4882,7 +4880,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Sales\nData",
+              "name": "New Menu Item\nRecord",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -4899,7 +4897,7 @@
               ]
             },
             "labels": [
-              "Sales\nData"
+              "New Menu Item\nRecord"
             ],
             "id": "95006d86-5e12-4cef-b6b5-3e8997f3667a",
             "source": {
@@ -4941,7 +4939,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Formated",
+              "name": "Record Added",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -4958,7 +4956,7 @@
               ]
             },
             "labels": [
-              "Formated"
+              "Record Added"
             ],
             "id": "446c87f6-680f-47c7-859e-9900242a202f",
             "source": {
@@ -4996,7 +4994,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Sales Report\nView Record",
+              "name": "Confirmation",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -5008,26 +5006,26 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "ccedfda9-f15b-4e2b-8dff-9cfc01cace8e",
-                "1dbb51dc-4f6c-4c7f-af8c-e416d1cfef10"
+                "1dbb51dc-4f6c-4c7f-af8c-e416d1cfef10",
+                "f0fc7fb5-d062-4457-b88c-5e2c7265a940"
               ]
             },
             "labels": [
-              "Sales Report\nView Record"
+              "Confirmation"
             ],
-            "id": "a497f939-d04d-4fbb-a767-942b1756003a",
+            "id": "7b6ab5fc-a664-48cb-9889-3b5798619095",
             "source": {
               "cell": "fecf4670-aa85-4d28-8d29-77e05b96c279",
-              "port": "63f090ac-a4cf-4f87-9776-f78db1a5070e"
+              "port": "ead94cd5-0d44-4d68-af36-b4fd0472094b"
             },
             "target": {
-              "cell": "2174488a-20f3-4c63-89ed-53d4dd19b402",
-              "port": "fa22a9ed-3b98-4bb5-8834-73c967778724"
+              "cell": "1ff55046-e1e9-4d78-9527-97898ab9bd3f",
+              "port": "6765f60d-8c2d-4cf9-9773-ddc38815b879"
             },
             "vertices": [
               {
-                "x": 320,
-                "y": 110
+                "x": 560,
+                "y": 380
               }
             ]
           },
@@ -5051,7 +5049,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Authentication\nand Sale Query",
+              "name": "Authentication\nand Validate Menu Item",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -5062,29 +5060,27 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "1dbb51dc-4f6c-4c7f-af8c-e416d1cfef10",
-                "f0fc7fb5-d062-4457-b88c-5e2c7265a940"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
-              "Authentication\nand Sale Query"
+              "Authentication\nand Validate Menu Item"
             ],
-            "id": "7b6ab5fc-a664-48cb-9889-3b5798619095",
+            "id": "a003a7a2-ab00-418e-a84c-1674b4941ecf",
             "source": {
               "cell": "fecf4670-aa85-4d28-8d29-77e05b96c279",
-              "port": "ead94cd5-0d44-4d68-af36-b4fd0472094b"
+              "port": "f29cedb1-c755-4626-b4ad-08a8a369e400"
             },
             "target": {
-              "cell": "1ff55046-e1e9-4d78-9527-97898ab9bd3f",
-              "port": "6765f60d-8c2d-4cf9-9773-ddc38815b879"
+              "cell": "fecf4670-aa85-4d28-8d29-77e05b96c279",
+              "port": "eb1e8504-84ed-4965-af90-b8dfd19dc517"
             },
             "vertices": [
               {
-                "x": 560,
-                "y": 380
+                "x": 580,
+                "y": 170
               }
-            ]
+            ],
+            "parent": "fecf4670-aa85-4d28-8d29-77e05b96c279"
           }
         ]
       }
