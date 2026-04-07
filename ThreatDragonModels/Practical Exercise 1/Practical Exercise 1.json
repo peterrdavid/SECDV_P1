@@ -2751,8 +2751,7 @@
                 "95006d86-5e12-4cef-b6b5-3e8997f3667a",
                 "446c87f6-680f-47c7-859e-9900242a202f",
                 "a497f939-d04d-4fbb-a767-942b1756003a",
-                "7b6ab5fc-a664-48cb-9889-3b5798619095",
-                "cd1544bf-e3e7-4e81-8ac2-1fd9aa4a4eb9"
+                "7b6ab5fc-a664-48cb-9889-3b5798619095"
               ],
               "containedElements": [
                 "fecf4670-aa85-4d28-8d29-77e05b96c279"
@@ -2785,8 +2784,7 @@
               "hasOpenThreats": false,
               "crossingFlows": [
                 "95006d86-5e12-4cef-b6b5-3e8997f3667a",
-                "7b6ab5fc-a664-48cb-9889-3b5798619095",
-                "cd1544bf-e3e7-4e81-8ac2-1fd9aa4a4eb9"
+                "7b6ab5fc-a664-48cb-9889-3b5798619095"
               ],
               "containedElements": [
                 "1ff55046-e1e9-4d78-9527-97898ab9bd3f"
@@ -3170,7 +3168,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Barista"
+                "text": "Manager"
               },
               "body": {
                 "stroke": "red",
@@ -3266,7 +3264,7 @@
             "id": "2174488a-20f3-4c63-89ed-53d4dd19b402",
             "data": {
               "type": "tm.Actor",
-              "name": "Barista",
+              "name": "Manager",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -3680,7 +3678,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Query/Retrieve\nOrders",
+              "name": "Sales\nData",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -3697,7 +3695,7 @@
               ]
             },
             "labels": [
-              "Query/Retrieve\nOrders"
+              "Sales\nData"
             ],
             "id": "95006d86-5e12-4cef-b6b5-3e8997f3667a",
             "source": {
@@ -3739,7 +3737,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Order List\nRequest/Response",
+              "name": "Formated",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -3756,7 +3754,7 @@
               ]
             },
             "labels": [
-              "Order List\nRequest/Response"
+              "Formated"
             ],
             "id": "446c87f6-680f-47c7-859e-9900242a202f",
             "source": {
@@ -3794,7 +3792,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Status Update",
+              "name": "Sales Report\nView Record",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -3811,7 +3809,7 @@
               ]
             },
             "labels": [
-              "Status Update"
+              "Sales Report\nView Record"
             ],
             "id": "a497f939-d04d-4fbb-a767-942b1756003a",
             "source": {
@@ -3849,7 +3847,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Update Order",
+              "name": "Authentication\nand Sale Query",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -3866,7 +3864,7 @@
               ]
             },
             "labels": [
-              "Update Order"
+              "Authentication\nand Sale Query"
             ],
             "id": "7b6ab5fc-a664-48cb-9889-3b5798619095",
             "source": {
@@ -3881,61 +3879,6 @@
               {
                 "x": 560,
                 "y": 380
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Order Data\nResponse",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "1dbb51dc-4f6c-4c7f-af8c-e416d1cfef10",
-                "f0fc7fb5-d062-4457-b88c-5e2c7265a940"
-              ]
-            },
-            "labels": [
-              "Order Data\nResponse"
-            ],
-            "id": "cd1544bf-e3e7-4e81-8ac2-1fd9aa4a4eb9",
-            "source": {
-              "cell": "1ff55046-e1e9-4d78-9527-97898ab9bd3f",
-              "port": "c0147752-7555-482f-b5b9-2f71aa14bb46"
-            },
-            "target": {
-              "cell": "fecf4670-aa85-4d28-8d29-77e05b96c279",
-              "port": "ead94cd5-0d44-4d68-af36-b4fd0472094b"
-            },
-            "vertices": [
-              {
-                "x": 250,
-                "y": 420
               }
             ]
           }
